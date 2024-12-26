@@ -1,0 +1,346 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "FacartaGW",
+    "version": "2024-11-27 20:34:39UTC"
+  },
+  "servers": [
+    {
+      "url": "https://3uo271cxyf.execute-api.us-east-1.amazonaws.com/{basePath}",
+      "variables": {
+        "basePath": {
+          "default": "prod"
+        }
+      }
+    }
+  ],
+  "paths": {
+    "/appointments": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/appointments/BookingDate": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments/BookingDate",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/appointments/getAppointmentsByBarberId": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments/getAppointmentsByBarberId",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/appointments/{id}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "put": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "PUT",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "delete": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "DELETE",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/appointments/{id}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/api/v1/auth": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/api/v1/auth",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/api/v1/partner": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/api/v1/partner",
+          "connectionType": "INTERNET"
+        }
+      },
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/api/v1/partner/{partner}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/api/v1/partner/{partner}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/api/v1/{id}": {
+      "put": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "PUT",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/api/v1/{id}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/barbers": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers",
+          "connectionType": "INTERNET"
+        }
+      },
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/barbers/{id}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "put": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "PUT",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "delete": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "DELETE",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/barbers/{id}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/clients": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients",
+          "connectionType": "INTERNET"
+        }
+      },
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/clients/find-client-x-Phone/{phone}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients/find-client-x-Phone/{phone}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/clients/{id}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "put": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "PUT",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients/{id}",
+          "connectionType": "INTERNET"
+        }
+      },
+      "delete": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "DELETE",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/clients/{id}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/payment": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/payment",
+          "connectionType": "INTERNET"
+        }
+      },
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/payment",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/product": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/product",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/product/desc": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/product/desc",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/product/{id}": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/product/{id}",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/sales/gettotal": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/sales/gettotal",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/sales/listsales": {
+      "get": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "GET",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/sales/listsales",
+          "connectionType": "INTERNET"
+        }
+      }
+    },
+    "/services": {
+      "post": {
+        "x-amazon-apigateway-integration": {
+          "payloadFormatVersion": "1.0",
+          "type": "http_proxy",
+          "httpMethod": "POST",
+          "uri": "http://ebfacarta-env.eba-pzhb4j8m.us-east-1.elasticbeanstalk.com/services",
+          "connectionType": "INTERNET"
+        }
+      }
+    }
+  },
+  "x-amazon-apigateway-cors": {
+    "allowMethods": [
+      "*"
+    ],
+    "allowHeaders": [
+      "*"
+    ],
+    "exposeHeaders": [
+      "*"
+    ],
+    "maxAge": 0,
+    "allowCredentials": false,
+    "allowOrigins": [
+      "*"
+    ]
+  },
+  "x-amazon-apigateway-importexport-version": "1.0"
+}
